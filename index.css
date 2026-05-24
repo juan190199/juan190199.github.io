@@ -5,7 +5,7 @@
   --bg-card: #ffffff;
   --fg: #1a1a1a;
   --fg-soft: #4a4a4a;
-  --fg-muted: #8c8a82;
+  --fg-muted: #737373; /* Neutral gray (no brown/warm tint) */
   --accent: #9e6b55;
   --accent-light: #c8907a;
   --teal: #3d7a8c;
@@ -39,6 +39,7 @@ body {
   background: var(--bg);
   font-size: 14px;
   line-height: 1.7;
+  text-align: justify;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: 60px;
@@ -116,8 +117,8 @@ a:hover {
 
 .header-text .specializations {
   font-size: 12px;
-  font-weight: 500;
-  color: var(--accent);
+  font-weight: 400;
+  color: var(--fg-muted);
   margin-bottom: 16px;
   letter-spacing: -0.1px;
 }
@@ -364,7 +365,7 @@ section {
 
 .pub-authors strong {
   color: var(--fg-muted);
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .pub-venue {
