@@ -427,9 +427,9 @@ section {
 
 .tag:not(:last-child)::after {
   content: "·";
-  color: var(--border);
+  color: var(--fg-muted);
   font-weight: 600;
-  margin: 0 7px;
+  margin: 0 8px;
 }
 
 .tag:hover {
