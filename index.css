@@ -229,25 +229,24 @@ section {
 
 /* ── POSITIONS ── */
 .positions-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .pos-item {
   display: flex;
   gap: 20px;
-  padding: 20px 24px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  border-radius: 8px;
-  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-light);
 }
 
-.pos-item:hover {
-  transform: translateY(-2px);
-  border-color: var(--border);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+.pos-item:first-child {
+  padding-top: 0;
+}
+
+.pos-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .pos-emoji {
