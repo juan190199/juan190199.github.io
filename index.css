@@ -427,8 +427,8 @@ section {
 
 .tag:not(:last-child)::after {
   content: "·";
-  color: var(--fg-muted);
-  font-weight: 600;
+  color: rgba(26, 26, 26, 0.22);
+  font-weight: 700;
   margin: 0 8px;
 }
 
